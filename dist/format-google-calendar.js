@@ -136,6 +136,8 @@ window.formatGoogleCalendar = function () {
                 upcomingCounter++;
             }
         }
+        
+        window.upcoming = upcomingResult;
 
         for (i in pastResult) {
             pastElem.insertAdjacentHTML('beforeend', transformationList(pastResult[i], settings.itemsTagName, settings.format));
